@@ -6,12 +6,12 @@ const GloblaStyle = createGlobalStyle`
   body, html {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     background-color: ${(props) => props.theme.white}
   }
 
   * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
   }
 `
 function App({ Component, pageProps }) {
