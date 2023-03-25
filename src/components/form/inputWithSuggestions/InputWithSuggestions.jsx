@@ -39,9 +39,9 @@ function InputWithSuggestions({ suggestions, ...props }) {
 
 InputWithSuggestions.defaultProps = {
   suggestions: [
-    { text: 'Sugestão', onclick: () => {} },
-    { text: 'Sugestão 2', onclick: () => {} },
-    { text: 'Sugestão 3', onclick: () => {} }
+    { text: 'Sugestão', onClick: () => {} },
+    { text: 'Sugestão 2', onClick: () => {} },
+    { text: 'Sugestão 3', onClick: () => {} }
   ]
 }
 
