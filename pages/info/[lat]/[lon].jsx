@@ -58,7 +58,6 @@ export default function InfoPage() {
       fetchFutureInfo()
     }
   }, [lat, lon])
-  console.log(futureInfo)
 
   return(
     <>
