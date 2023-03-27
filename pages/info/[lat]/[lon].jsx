@@ -8,13 +8,32 @@ const Body = styled.div`
   min-height: 100vh;
 `
 
+const Content = styled.div`
+  padding: 80px 0;
+`
+
+const Text = styled.p`
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+`
+
+const CityName = styled.h2`
+  font-size: 60px;
+  padding: 0;
+  margin: 0;
+`
+
 export default function InfoPage() {
   return(
     <>
       <Navbar />
       <Body>
         <Container>
-          conteudo
+          <Content>
+            <Text>Previsão do tempo agora</Text>
+            <CityName>Cidade</CityName>
+          </Content>
         </Container>
       </Body>
     </>

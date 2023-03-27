@@ -6,7 +6,8 @@ const GloblaStyle = createGlobalStyle`
   body, html {
     padding: 0;
     margin: 0;
-    background-color: ${(props) => props.theme.white}
+    background-color: ${(props) => props.theme.white};
+    color: ${(props) => props.theme.black};
   }
 
   * {
