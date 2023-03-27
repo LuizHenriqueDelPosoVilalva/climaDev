@@ -29,7 +29,7 @@ export default function Logo({ showImage, type }) {
       {showImage && <Img src="/woman.svg"/> } 
       {type === 'vertical' && 
         <VerticalText>
-          Clima <br /><PrimaryColor>Dev</PrimaryColor>
+          Clima<br /><PrimaryColor>Dev</PrimaryColor>
         </VerticalText> 
       }
       {type === 'horizontal' &&

@@ -4,6 +4,7 @@ import BackgroundImageWithChildren from
   '../src/components/layout/backgroundImageWithChildren/BackgroundImageWithChildren'
 import Logo from '../src/components/logo/Logo'
 import SearchCity from '../src/components/searchCity/SearchCity'
+import Footer from '../src/components/footer/Footer'
 
 const StyledDiv = styled.div`
   background-color: ${(props) => props.theme.white};
@@ -34,13 +35,13 @@ const InputContainer = styled.div`
 
 export default function HomePage() {
   return (
-    <BackgroundImageWithChildren>
+    <><BackgroundImageWithChildren>
       <StyledDiv>
         <Logo showImage type={'vertical'} />
         <InputContainer>
-          <StyledInput/>
+          <StyledInput />
         </InputContainer>
       </StyledDiv>
-    </BackgroundImageWithChildren>
+    </BackgroundImageWithChildren><Footer /></>
   )
 }
