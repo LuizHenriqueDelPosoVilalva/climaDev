@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import Navbar from '../../../src/components/navbar/Navbar'
 import Container from '../../../src/components/layout/container/Container'
+import ClimaCard from '../../../src/components/climaCard/ClimaCard'
 
 const Body = styled.div`
   background-color: ${(props) => props.theme.grey};
@@ -24,6 +25,13 @@ const CityName = styled.h2`
   margin: 0;
 `
 
+const InfoContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+`
+
 export default function InfoPage() {
   return(
     <>
@@ -34,6 +42,11 @@ export default function InfoPage() {
             <Text>Previsão do tempo agora</Text>
             <CityName>Cidade</CityName>
           </Content>
+          <InfoContainer>
+              <ClimaCard />
+              <ClimaCard />
+              <ClimaCard />
+          </InfoContainer>
         </Container>
       </Body>
     </>
