@@ -42,13 +42,13 @@ export default function InfoPage() {
   const { lat, lon } = router.query
 
   const fetchCurrentInfo = async() => {
-    const response = await fetch(`/api/openWeatherMap?url=/data/2.5/weather?lat=${lat}&lon=${lon}`)
+    const response = await fetch(`/api/openWeatherMap?url=/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&lang=pt_br`)
     const json = await response.json()
     setCurrentInfo(json)
   }
 
   const fetchFutureInfo = async() => {
-    const response = await fetch(`/api/openWeatherMap?url=/data/2.5/forecast?lat=${lat}&lon=${lon}`)
+    const response = await fetch(`/api/openWeatherMap?url=/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&lang=pt_br`)
     const json = await response.json()
     setFutureInfo(json)
   }
